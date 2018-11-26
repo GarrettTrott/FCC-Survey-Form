@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="index.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<head>
+	<title>Skydiving Survey</title>
+</head>
+<body>
+	<h1 id="title">Skydiving Survey</h1>
+	<div id="form-div">
+		<p id="description">Tell us about what kind of skydiver you are</p>
+		<form id="survey-form" method="GET" action="">
+			<div class="form-labels">
+				<label id="name-label" for="name">* Name: </label>
+			</div>
+			<div class="form-inputs">
+				<input type="text" id="name" class="text-feild" name="name" placeholder="Enter your name" required>
+			</div>
+			<div class="form-labels">
+				<label id="email-label" for="email">* Email: </label>
+			</div>
+			<div class="form-inputs">
+				<input type="email" id="email" class="text-feild" name="email" placeholder="Enter your email" required>
+			</div>
+			<div class="form-labels">
+				<label id="number-label" for="age">* Age: </label>
+			</div>
+			<div class="form-inputs">
+				<input type="number" id="number" class="text-feild" name="email" placeholder="Age" min="18" max="120" required>
+			</div>
+			<div class="form-labels">
+				<label id="sex" for="sex">  Sex: </label>
+			</div>
+			<div class="form-inputs">
+				<ul style="list-style: none;">
+					<li class="radio"><label>Male  <input type="radio" name="radio-buttons" value="1" class="selection"></label></li>
+					<li class="radio"><label>Female  <input type="radio" name="radio-buttons" value="2" class="selection"></label></li>
+					<li class="radio"><label>Not sure  <input type="radio" name="radio-buttons" value="3" class="selection"></label></li>
+			</div>
+			<div class="form-labels">
+				<label id="license" for="license">Which License do have?</label>
+			</div>
+			<div class="form-inputs">
+				<select id="dropdown" name="license" class="dropdown">
+					<option disabled value >Select a License</option>
+					<option value="Tandem">Tandem Student</option>
+					<option value="Student">AFF Student</option>
+					<option value="A-License">USPA A-License</option>
+					<option value="B-License">USPA B-License</option>
+					<option value="C-License">USPA C-License</option>
+					<option value="D-License">USPA D-License</option>
+					<option value="PRO-License">USPA PRO-License</option>
+				</select>
+			</div>
+			<div class="form-labels">
+				<label id="disciplines" for="disciplines">Which disciplines do you practice?</label>
+			</div>
+			<div class="form-inputs">
+				<ul id="disciplines" style="list-style: none;">
+					<li class="checkbox"><label><input name="disci" value="1" type="checkbox" class="selection">Relitive Work</label></li>
+					<li class="checkbox"><label><input name="disci" value="2" type="checkbox" class="selection">Freeflying</label></li>
+					<li class="checkbox"><label><input name="disci" value="3" type="checkbox" class="selection">Wingsuiting</label></li>
+					<li class="checkbox"><label><input name="disci" value="4" type="checkbox" class="selection">CRW</label></li>
+					<li class="checkbox"><label><input name="disci" value="5" type="checkbox" class="selection">Canopy Piloting / Swooping</label></li>
+					<li class="checkbox"><label><input name="disci" value="6" type="checkbox" class="selection">Basejumping</label></li>
+				</ul>
+			</div>
+			<div class="form-labels">
+				<lable id="dropzone" for="dropzone">What is your favorite Dropzone?</lable>
+			</div>
+			<div class="form-inputs">
+				<textarea class="text-feild" name="dropzone" placeholder="Enter Dropzone Here"></textarea>
+			</div>
+			<button id="submit" type="su">Submit</button>
+		</form>		
+	</div> 
+</body>
+</html>
